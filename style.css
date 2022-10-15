@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100px;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+        display: flex;
+    align-items: center;
+}
+.logo{
+    width: 40px;
+    cursor: pointer;
+    margin: 15px 0;
+    border-radius: 50%;
+}
+.main{
+    width: 30px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+.icon{
+    width: 40px;
+    cursor: pointer;
+    margin: 15px 0;
+    border-radius: 50%;
+}
+.menu-icon{
+    width: 50px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 2;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(184, 154, 3);
+    font: 10px;
+}
+nav ul li a:hover{
+    color: rgb(3, 144, 214);
+}
+.row{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    margin: 20px 0;
+}
+.col-1{
+    flex-basis: 50%;
+    position: relative;
+    margin-left: 10px;
+    
+}
+.col-1 h2{
+    font-size: 40px;
+}
+.col-1 h3{
+    font-size: 25px;
+    color: aqua;
+    font-weight: 100;
+    margin: 10px 0 10px;
+}
+button{
+    width: 200px;
+    border:0;
+    padding:12px 20px;
+    outline:none;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #fca14c, #4dc7f7);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px){
+     nav ul{
+        width: 100%;
+        background: linear-gradient(to right, #095BED, #F0A50A);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+     }
+     nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+     }
+     nav ul li a{
+        color: #fff;
+     }   
+     .menu-icon{
+        display: block;
+
+     }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+.col-2{
+    flex-basis: 100%;
+    margin-bottom: 50px;
+}
+.col-2 .controller{
+    width: 77%;
+}
+.color-box{
+    transform: translateX(75px);
+}
+
+}
